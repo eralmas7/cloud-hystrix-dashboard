@@ -1,2 +1,12 @@
 server:
-  port: 8383
+  port: 8384
+spring:
+  application:
+    name: hystrix-dashboard
+  cloud:
+    config:
+      import-check:
+        enabled: "false"
+logging:
+  level:
+    org.springframework: DEBUG
