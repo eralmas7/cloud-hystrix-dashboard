@@ -5,7 +5,4 @@ spring:
     name: hystrix-dashboard
   cloud:
     config:
-      uri:  http://cloud-config:8888
-logging:
-  level:
-    org.springframework: DEBUG
+      uri: ${vcap.services.config-server.credentials.uri:http://cloud-config:8888}
