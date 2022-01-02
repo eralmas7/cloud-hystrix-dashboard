@@ -5,8 +5,7 @@ spring:
     name: hystrix-dashboard
   cloud:
     config:
-      import-check:
-        enabled: "false"
+      uri:  http://cloud-config:8888
 logging:
   level:
     org.springframework: DEBUG
